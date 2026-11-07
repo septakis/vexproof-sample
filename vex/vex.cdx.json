@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:b96254c3-a04d-5963-9425-58c806d78fc4",
+  "serialNumber": "urn:uuid:804f0b7c-6a57-5a52-b53e-371443b64450",
   "version": 1,
   "metadata": {
     "timestamp": "2026-11-06T00:00:00.000Z",
@@ -10,7 +10,7 @@
         {
           "type": "application",
           "name": "vexproof",
-          "version": "1.0.0-beta.3"
+          "version": "1.0.0-beta.5"
         }
       ]
     },
@@ -27,7 +27,7 @@
       },
       {
         "name": "vexproof:lockfileSbomSerial",
-        "value": "urn:uuid:01955f53-b285-4f37-b094-109f8e5dfbd8"
+        "value": "urn:uuid:423aa93e-2732-4f2c-bafd-fa268950271a"
       },
       {
         "name": "vexproof:bundleComponentCount",
@@ -39,7 +39,7 @@
       },
       {
         "name": "vexproof:input:lockfile-sbom:sha256",
-        "value": "91f80bb78743525f32e227f825a25ed9dbab666cb717a11620c9a28a3914996b"
+        "value": "5f34af13ded13a195e56164f67d03e9de422fd54489389306a74c81f2ecebf8e"
       },
       {
         "name": "vexproof:input:bundle-sbom:sha256",
@@ -47,7 +47,7 @@
       },
       {
         "name": "vexproof:input:findings-npm-audit:sha256",
-        "value": "8deb9741c5a9e347c2d919d1d2f0c1d688d59189529021dfca4f34e123e93e1f"
+        "value": "472f0d3237b7e4b29639e0042dbe2e76a897a32a7f188af730b6d8c980defe25"
       },
       {
         "name": "vexproof:input:modules-esbuild-metafile:sha256",
@@ -71,7 +71,7 @@
       },
       "affects": [
         {
-          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Cmoment%402.29.1"
+          "ref": "urn:cdx:423aa93e-2732-4f2c-bafd-fa268950271a/1#chart-dashboard%401.0.0%7Cmoment%402.29.1"
         }
       ],
       "properties": [
@@ -104,7 +104,7 @@
       },
       "affects": [
         {
-          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Cmoment%402.29.1"
+          "ref": "urn:cdx:423aa93e-2732-4f2c-bafd-fa268950271a/1#chart-dashboard%401.0.0%7Cmoment%402.29.1"
         }
       ],
       "properties": [
@@ -144,7 +144,7 @@
       },
       "affects": [
         {
-          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+          "ref": "urn:cdx:423aa93e-2732-4f2c-bafd-fa268950271a/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
         }
       ],
       "properties": [
@@ -176,7 +176,7 @@
       },
       "affects": [
         {
-          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+          "ref": "urn:cdx:423aa93e-2732-4f2c-bafd-fa268950271a/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
         }
       ],
       "properties": [
@@ -220,7 +220,7 @@
       },
       "affects": [
         {
-          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+          "ref": "urn:cdx:423aa93e-2732-4f2c-bafd-fa268950271a/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
         }
       ],
       "properties": [
@@ -268,7 +268,7 @@
       },
       "affects": [
         {
-          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+          "ref": "urn:cdx:423aa93e-2732-4f2c-bafd-fa268950271a/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
         }
       ],
       "properties": [

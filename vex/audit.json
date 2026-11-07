@@ -39,7 +39,9 @@
           "range": ">=4.0.0 <=4.17.22"
         }
       ],
-      "effects": [],
+      "effects": [
+        "recharts"
+      ],
       "range": "4.0.0 - 4.17.23",
       "nodes": [
         "node_modules/lodash"
@@ -96,6 +98,20 @@
         "version": "2.31.0",
         "isSemVerMajor": false
       }
+    },
+    "recharts": {
+      "name": "recharts",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "lodash"
+      ],
+      "effects": [],
+      "range": "0.8.1 - 0.15.3 || 0.20.3 - 1.5.0",
+      "nodes": [
+        "node_modules/recharts"
+      ],
+      "fixAvailable": true
     }
   },
   "metadata": {
@@ -103,9 +119,9 @@
       "info": 0,
       "low": 0,
       "moderate": 0,
-      "high": 2,
+      "high": 3,
       "critical": 0,
-      "total": 2
+      "total": 3
     },
     "dependencies": {
       "prod": 46,
