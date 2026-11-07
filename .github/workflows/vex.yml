@@ -31,10 +31,9 @@ jobs:
       - run: npm run audit
 
       - name: vexproof
-        # Pin to a release tag once 1.0.0-beta.4 or later is out; the action.yml at beta.3 does not parse.
-        uses: septakis/vexproof@main
+        uses: septakis/vexproof@v1.0.0-beta.4
         with:
-          version: 1.0.0-beta.3
+          version: 1.0.0-beta.4
           lockfile: vex/bom.lockfile.json
           bundle: vex/bom.bundle.json
           modules: dist/meta.json
