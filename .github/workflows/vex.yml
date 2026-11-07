@@ -1,0 +1,58 @@
+name: VEX
+
+# Builds the app, writes the two SBOMs and the audit, then runs vexproof on them.
+# Without a license the free tier runs; with VEXPROOF_LICENSE set as a repository secret, Pro does.
+# Runs on every push and pull request, and weekly, because advisories arrive without a commit.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  vex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm run sbom:lockfile
+      - run: npm run sbom:bundle
+      - run: npm run audit
+
+      - name: vexproof
+        uses: septakis/vexproof@v1.0.0-beta.3
+        with:
+          version: 1.0.0-beta.3
+          lockfile: vex/bom.lockfile.json
+          bundle: vex/bom.bundle.json
+          modules: dist/meta.json
+          findings: vex/audit.json
+          out: vex/vex.cdx.json
+          openvex: vex/vex.openvex.json
+          license: ${{ secrets.VEXPROOF_LICENSE }}
+
+      - name: Show the statements
+        run: |
+          node -e '
+            const v = JSON.parse(require("fs").readFileSync("vex/vex.cdx.json", "utf8"));
+            for (const s of v.vulnerabilities) if (!s.properties?.some(p => p.name === "vexproof:alias-of"))
+              console.log(s.analysis.state.padEnd(14), s.id.padEnd(22), s.properties.find(p => p.name === "vexproof:package").value);
+          '
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vex
+          path: |
+            vex/
+            dist/meta.json

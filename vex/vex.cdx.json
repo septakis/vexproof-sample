@@ -1,0 +1,310 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:b96254c3-a04d-5963-9425-58c806d78fc4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-06T00:00:00.000Z",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "vexproof",
+          "version": "1.0.0-beta.3"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:npm/chart-dashboard@1.0.0",
+      "purl": "pkg:npm/chart-dashboard@1.0.0",
+      "name": "pkg:npm/chart-dashboard@1.0.0"
+    },
+    "properties": [
+      {
+        "name": "vexproof:bundleSbomSerial",
+        "value": "null"
+      },
+      {
+        "name": "vexproof:lockfileSbomSerial",
+        "value": "urn:uuid:01955f53-b285-4f37-b094-109f8e5dfbd8"
+      },
+      {
+        "name": "vexproof:bundleComponentCount",
+        "value": "24"
+      },
+      {
+        "name": "vexproof:lockfileComponentCount",
+        "value": "45"
+      },
+      {
+        "name": "vexproof:input:lockfile-sbom:sha256",
+        "value": "91f80bb78743525f32e227f825a25ed9dbab666cb717a11620c9a28a3914996b"
+      },
+      {
+        "name": "vexproof:input:bundle-sbom:sha256",
+        "value": "b185aa0856b12e5c3bacc88c57e92432e4aed60ea826fe7499d0c2e6d89d1f97"
+      },
+      {
+        "name": "vexproof:input:findings-npm-audit:sha256",
+        "value": "8deb9741c5a9e347c2d919d1d2f0c1d688d59189529021dfca4f34e123e93e1f"
+      },
+      {
+        "name": "vexproof:input:modules-esbuild-metafile:sha256",
+        "value": "92845fd52e3b2f723859c638abea5cadfe06a9aeef0af8cf55472ec2f57be007"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "id": "GHSA-8hfj-j24r-96c4",
+      "source": {
+        "name": "GITHUB",
+        "url": "https://github.com/advisories/GHSA-8hfj-j24r-96c4"
+      },
+      "analysis": {
+        "state": "not_affected",
+        "justification": "code_not_present",
+        "detail": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+        "firstIssued": "2026-11-06T00:00:00.000Z",
+        "lastUpdated": "2026-11-06T00:00:00.000Z"
+      },
+      "affects": [
+        {
+          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Cmoment%402.29.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "vexproof:package",
+          "value": "pkg:npm/moment@2.29.1"
+        },
+        {
+          "name": "vexproof:origin",
+          "value": "auto"
+        },
+        {
+          "name": "vexproof:level",
+          "value": "package"
+        }
+      ]
+    },
+    {
+      "id": "GHSA-wc69-rhjr-hc9g",
+      "source": {
+        "name": "GITHUB",
+        "url": "https://github.com/advisories/GHSA-wc69-rhjr-hc9g"
+      },
+      "analysis": {
+        "state": "not_affected",
+        "justification": "code_not_present",
+        "detail": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+        "firstIssued": "2026-11-06T00:00:00.000Z",
+        "lastUpdated": "2026-11-06T00:00:00.000Z"
+      },
+      "affects": [
+        {
+          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Cmoment%402.29.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "vexproof:package",
+          "value": "pkg:npm/moment@2.29.1"
+        },
+        {
+          "name": "vexproof:origin",
+          "value": "auto"
+        },
+        {
+          "name": "vexproof:level",
+          "value": "package"
+        }
+      ]
+    },
+    {
+      "id": "GHSA-r5fr-rjxr-66jc",
+      "source": {
+        "name": "GITHUB",
+        "url": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc"
+      },
+      "references": [
+        {
+          "id": "CVE-2026-4800",
+          "source": {
+            "name": "alias"
+          }
+        }
+      ],
+      "analysis": {
+        "state": "in_triage",
+        "detail": "npm/lodash (4.17.21) is present in the shipped bundle; requires manual review.",
+        "firstIssued": "2026-11-06T00:00:00.000Z",
+        "lastUpdated": "2026-11-06T00:00:00.000Z"
+      },
+      "affects": [
+        {
+          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+        }
+      ],
+      "properties": [
+        {
+          "name": "vexproof:package",
+          "value": "pkg:npm/lodash@4.17.21"
+        },
+        {
+          "name": "vexproof:origin",
+          "value": "auto"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-4800",
+      "references": [
+        {
+          "id": "GHSA-r5fr-rjxr-66jc",
+          "source": {
+            "name": "alias"
+          }
+        }
+      ],
+      "analysis": {
+        "state": "in_triage",
+        "detail": "npm/lodash (4.17.21) is present in the shipped bundle; requires manual review.",
+        "firstIssued": "2026-11-06T00:00:00.000Z",
+        "lastUpdated": "2026-11-06T00:00:00.000Z"
+      },
+      "affects": [
+        {
+          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+        }
+      ],
+      "properties": [
+        {
+          "name": "vexproof:package",
+          "value": "pkg:npm/lodash@4.17.21"
+        },
+        {
+          "name": "vexproof:origin",
+          "value": "auto"
+        },
+        {
+          "name": "vexproof:alias-of",
+          "value": "GHSA-r5fr-rjxr-66jc"
+        }
+      ],
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4800"
+      }
+    },
+    {
+      "id": "GHSA-xxjr-mmjv-4gpg",
+      "source": {
+        "name": "GITHUB",
+        "url": "https://github.com/advisories/GHSA-xxjr-mmjv-4gpg"
+      },
+      "references": [
+        {
+          "id": "CVE-2025-13465",
+          "source": {
+            "name": "alias"
+          }
+        }
+      ],
+      "analysis": {
+        "state": "in_triage",
+        "detail": "npm/lodash (4.17.21) is present in the shipped bundle; requires manual review. Module-level check: vulnerable file(s) bundled: _baseUnset.js, omit.js.",
+        "firstIssued": "2026-11-06T00:00:00.000Z",
+        "lastUpdated": "2026-11-06T00:00:00.000Z"
+      },
+      "affects": [
+        {
+          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+        }
+      ],
+      "properties": [
+        {
+          "name": "vexproof:package",
+          "value": "pkg:npm/lodash@4.17.21"
+        },
+        {
+          "name": "vexproof:origin",
+          "value": "auto"
+        },
+        {
+          "name": "vexproof:vulnerable-files",
+          "value": "_baseUnset.js omit.js"
+        },
+        {
+          "name": "vexproof:evidence-files",
+          "value": "_baseUnset.js=b246cdf2a6d70134 omit.js=111f0b5aff4899bd"
+        },
+        {
+          "name": "vexproof:evidence-files-digest",
+          "value": "805a7c73db01c270"
+        },
+        {
+          "name": "vexproof:importers",
+          "value": "recharts@2.15.4/es6/chart/Treemap.js"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2025-13465",
+      "references": [
+        {
+          "id": "GHSA-xxjr-mmjv-4gpg",
+          "source": {
+            "name": "alias"
+          }
+        }
+      ],
+      "analysis": {
+        "state": "in_triage",
+        "detail": "npm/lodash (4.17.21) is present in the shipped bundle; requires manual review. Module-level check: vulnerable file(s) bundled: _baseUnset.js, omit.js.",
+        "firstIssued": "2026-11-06T00:00:00.000Z",
+        "lastUpdated": "2026-11-06T00:00:00.000Z"
+      },
+      "affects": [
+        {
+          "ref": "urn:cdx:01955f53-b285-4f37-b094-109f8e5dfbd8/1#chart-dashboard%401.0.0%7Clodash%404.17.21"
+        }
+      ],
+      "properties": [
+        {
+          "name": "vexproof:package",
+          "value": "pkg:npm/lodash@4.17.21"
+        },
+        {
+          "name": "vexproof:origin",
+          "value": "auto"
+        },
+        {
+          "name": "vexproof:vulnerable-files",
+          "value": "_baseUnset.js omit.js"
+        },
+        {
+          "name": "vexproof:evidence-files",
+          "value": "_baseUnset.js=b246cdf2a6d70134 omit.js=111f0b5aff4899bd"
+        },
+        {
+          "name": "vexproof:evidence-files-digest",
+          "value": "805a7c73db01c270"
+        },
+        {
+          "name": "vexproof:importers",
+          "value": "recharts@2.15.4/es6/chart/Treemap.js"
+        },
+        {
+          "name": "vexproof:alias-of",
+          "value": "GHSA-xxjr-mmjv-4gpg"
+        }
+      ],
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13465"
+      }
+    }
+  ]
+}

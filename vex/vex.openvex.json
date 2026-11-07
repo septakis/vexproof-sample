@@ -1,0 +1,91 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "urn:uuid:ce983805-85c0-5d1e-a1e5-fffa9ce676a3",
+  "author": "vexproof",
+  "role": "Document Creator",
+  "timestamp": "2026-11-06T00:00:00.000Z",
+  "version": 1,
+  "tooling": "vexproof/1.0.0-beta.3",
+  "statements": [
+    {
+      "vulnerability": {
+        "name": "GHSA-8hfj-j24r-96c4"
+      },
+      "products": [
+        {
+          "@id": "pkg:npm/chart-dashboard@1.0.0",
+          "subcomponents": [
+            {
+              "@id": "pkg:npm/moment@2.29.1"
+            }
+          ]
+        }
+      ],
+      "status": "not_affected",
+      "justification": "component_not_present",
+      "impact_statement": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+      "timestamp": "2026-11-06T00:00:00.000Z"
+    },
+    {
+      "vulnerability": {
+        "name": "GHSA-wc69-rhjr-hc9g"
+      },
+      "products": [
+        {
+          "@id": "pkg:npm/chart-dashboard@1.0.0",
+          "subcomponents": [
+            {
+              "@id": "pkg:npm/moment@2.29.1"
+            }
+          ]
+        }
+      ],
+      "status": "not_affected",
+      "justification": "component_not_present",
+      "impact_statement": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+      "timestamp": "2026-11-06T00:00:00.000Z"
+    },
+    {
+      "vulnerability": {
+        "name": "GHSA-r5fr-rjxr-66jc",
+        "aliases": [
+          "CVE-2026-4800"
+        ]
+      },
+      "products": [
+        {
+          "@id": "pkg:npm/chart-dashboard@1.0.0",
+          "subcomponents": [
+            {
+              "@id": "pkg:npm/lodash@4.17.21"
+            }
+          ]
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "npm/lodash (4.17.21) is present in the shipped bundle; requires manual review.",
+      "timestamp": "2026-11-06T00:00:00.000Z"
+    },
+    {
+      "vulnerability": {
+        "name": "GHSA-xxjr-mmjv-4gpg",
+        "aliases": [
+          "CVE-2025-13465"
+        ]
+      },
+      "products": [
+        {
+          "@id": "pkg:npm/chart-dashboard@1.0.0",
+          "subcomponents": [
+            {
+              "@id": "pkg:npm/lodash@4.17.21"
+            }
+          ]
+        }
+      ],
+      "status": "under_investigation",
+      "status_notes": "npm/lodash (4.17.21) is present in the shipped bundle; requires manual review. Module-level check: vulnerable file(s) bundled: _baseUnset.js, omit.js.",
+      "timestamp": "2026-11-06T00:00:00.000Z"
+    }
+  ]
+}

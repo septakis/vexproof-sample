@@ -1,0 +1,33 @@
+{
+  "name": "chart-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample app for vexproof: a small React dashboard whose production bundle is checked against its npm audit findings",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "sbom:lockfile": "cyclonedx-npm --omit dev --output-format JSON --spec-version 1.6 --output-file vex/bom.lockfile.json",
+    "sbom:bundle": "cyclonedx-esbuild --output-reproducible --spec-version 1.6 -o vex/bom.bundle.json dist/meta.json",
+    "audit": "npm audit --omit dev --json > vex/audit.json || true",
+    "vex": "vexproof --lockfile vex/bom.lockfile.json --bundle vex/bom.bundle.json --modules dist/meta.json --findings vex/audit.json --out vex/vex.cdx.json --openvex vex/vex.openvex.json",
+    "all": "npm run build && npm run sbom:lockfile && npm run sbom:bundle && npm run audit && npm run vex"
+  },
+  "dependencies": {
+    "moment": "2.29.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "2.15.4"
+  },
+  "overrides": {
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "@cyclonedx/cyclonedx-esbuild": "^1.4.4",
+    "@cyclonedx/cyclonedx-npm": "^6.0.1",
+    "esbuild": "^0.28.2",
+    "vexproof": "1.0.0-beta.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

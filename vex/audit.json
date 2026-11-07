@@ -1,0 +1,119 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "lodash": {
+      "name": "lodash",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1115806,
+          "name": "lodash",
+          "dependency": "lodash",
+          "title": "lodash vulnerable to Code Injection via `_.template` imports key names",
+          "url": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc",
+          "severity": "high",
+          "cwe": [
+            "CWE-94"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": ">=4.0.0 <=4.17.23"
+        },
+        {
+          "source": 1244531,
+          "name": "lodash",
+          "dependency": "lodash",
+          "title": "Lodash has Prototype Pollution Vulnerability in `_.unset`, `_.omit`, and `_.pullAt` functions",
+          "url": "https://github.com/advisories/GHSA-xxjr-mmjv-4gpg",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+          },
+          "range": ">=4.0.0 <=4.17.22"
+        }
+      ],
+      "effects": [],
+      "range": "4.0.0 - 4.17.23",
+      "nodes": [
+        "node_modules/lodash"
+      ],
+      "fixAvailable": true
+    },
+    "moment": {
+      "name": "moment",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1109571,
+          "name": "moment",
+          "dependency": "moment",
+          "title": "Path Traversal: 'dir/../../filename' in moment.locale",
+          "url": "https://github.com/advisories/GHSA-8hfj-j24r-96c4",
+          "severity": "high",
+          "cwe": [
+            "CWE-22",
+            "CWE-27"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": "<2.29.2"
+        },
+        {
+          "source": 1109572,
+          "name": "moment",
+          "dependency": "moment",
+          "title": "Moment.js vulnerable to Inefficient Regular Expression Complexity",
+          "url": "https://github.com/advisories/GHSA-wc69-rhjr-hc9g",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.18.0 <2.29.4"
+        }
+      ],
+      "effects": [],
+      "range": "<=2.29.3",
+      "nodes": [
+        "node_modules/moment"
+      ],
+      "fixAvailable": {
+        "name": "moment",
+        "version": "2.31.0",
+        "isSemVerMajor": false
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 2,
+      "critical": 0,
+      "total": 2
+    },
+    "dependencies": {
+      "prod": 46,
+      "dev": 206,
+      "optional": 180,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 251
+    }
+  }
+}
