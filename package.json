@@ -25,7 +25,7 @@
     "@cyclonedx/cyclonedx-esbuild": "^1.4.4",
     "@cyclonedx/cyclonedx-npm": "^6.0.1",
     "esbuild": "^0.28.2",
-    "vexproof": "1.0.0-beta.6"
+    "vexproof": "1.0.0-beta.7"
   },
   "engines": {
     "node": ">=22"
