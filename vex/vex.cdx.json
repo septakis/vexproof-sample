@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:804f0b7c-6a57-5a52-b53e-371443b64450",
+  "serialNumber": "urn:uuid:5d31718c-544b-5a7e-9f76-69d0a6eef9d5",
   "version": 1,
   "metadata": {
     "timestamp": "2026-11-06T00:00:00.000Z",
@@ -10,7 +10,7 @@
         {
           "type": "application",
           "name": "vexproof",
-          "version": "1.0.0-beta.5"
+          "version": "1.0.0-beta.6"
         }
       ]
     },
