@@ -31,9 +31,8 @@ jobs:
       - run: npm run audit
 
       - name: vexproof
-        uses: septakis/vexproof@v1.0.0-beta.8
+        uses: septakis/vexproof@v1.0.0-beta.9
         with:
-          version: 1.0.0-beta.8
           lockfile: vex/bom.lockfile.json
           bundle: vex/bom.bundle.json
           modules: dist/meta.json

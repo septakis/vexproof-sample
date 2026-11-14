@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:34b752f4-616f-54be-ba58-597bcc18a8e6",
+  "serialNumber": "urn:uuid:e9f1c14e-63fd-5cd5-8ec5-32638410e642",
   "version": 1,
   "metadata": {
     "timestamp": "2026-11-06T00:00:00.000Z",
@@ -10,7 +10,7 @@
         {
           "type": "application",
           "name": "vexproof",
-          "version": "1.0.0-beta.8"
+          "version": "1.0.0-beta.9"
         }
       ]
     },
@@ -31,7 +31,7 @@
       },
       {
         "name": "vexproof:bundleComponentCount",
-        "value": "24"
+        "value": "48"
       },
       {
         "name": "vexproof:lockfileComponentCount",
