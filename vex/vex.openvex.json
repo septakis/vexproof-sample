@@ -1,11 +1,11 @@
 {
   "@context": "https://openvex.dev/ns/v0.2.0",
-  "@id": "urn:uuid:426835b5-8c2c-582b-acff-53e8d9285674",
+  "@id": "urn:uuid:08e4cb7b-d37b-57a3-afa9-b5862f63799e",
   "author": "vexproof",
   "role": "Document Creator",
   "timestamp": "2026-11-06T00:00:00.000Z",
   "version": 1,
-  "tooling": "vexproof/1.0.0-beta.11",
+  "tooling": "vexproof/1.0.0-beta.12",
   "statements": [
     {
       "vulnerability": {
