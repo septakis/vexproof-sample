@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:08e943f2-1fc5-5b77-875b-e6b10591d5ac",
+  "serialNumber": "urn:uuid:d03e7d7b-3666-549b-b0b2-05dc89a6ac6d",
   "version": 1,
   "metadata": {
     "timestamp": "2026-11-06T00:00:00.000Z",
@@ -10,7 +10,7 @@
         {
           "type": "application",
           "name": "vexproof",
-          "version": "1.0.0-beta.10"
+          "version": "1.0.0-beta.11"
         }
       ]
     },
@@ -21,10 +21,6 @@
       "name": "pkg:npm/chart-dashboard@1.0.0"
     },
     "properties": [
-      {
-        "name": "vexproof:bundleSbomSerial",
-        "value": "null"
-      },
       {
         "name": "vexproof:lockfileSbomSerial",
         "value": "urn:uuid:423aa93e-2732-4f2c-bafd-fa268950271a"
@@ -65,7 +61,7 @@
       "analysis": {
         "state": "not_affected",
         "justification": "code_not_present",
-        "detail": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+        "detail": "moment@2.29.1 is in the lockfile SBOM, but the bundle SBOM of the production build lists no component named moment; the production build's module map holds no file of moment. The package's code is not present in the shipped artifact.",
         "firstIssued": "2026-11-06T00:00:00.000Z",
         "lastUpdated": "2026-11-06T00:00:00.000Z"
       },
@@ -98,7 +94,7 @@
       "analysis": {
         "state": "not_affected",
         "justification": "code_not_present",
-        "detail": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+        "detail": "moment@2.29.1 is in the lockfile SBOM, but the bundle SBOM of the production build lists no component named moment; the production build's module map holds no file of moment. The package's code is not present in the shipped artifact.",
         "firstIssued": "2026-11-06T00:00:00.000Z",
         "lastUpdated": "2026-11-06T00:00:00.000Z"
       },

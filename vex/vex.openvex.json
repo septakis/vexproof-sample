@@ -1,11 +1,11 @@
 {
   "@context": "https://openvex.dev/ns/v0.2.0",
-  "@id": "urn:uuid:9e6089db-3ab8-591b-b85f-971853306d85",
+  "@id": "urn:uuid:426835b5-8c2c-582b-acff-53e8d9285674",
   "author": "vexproof",
   "role": "Document Creator",
   "timestamp": "2026-11-06T00:00:00.000Z",
   "version": 1,
-  "tooling": "vexproof/1.0.0-beta.10",
+  "tooling": "vexproof/1.0.0-beta.11",
   "statements": [
     {
       "vulnerability": {
@@ -23,7 +23,7 @@
       ],
       "status": "not_affected",
       "justification": "component_not_present",
-      "impact_statement": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+      "impact_statement": "moment@2.29.1 is in the lockfile SBOM, but the bundle SBOM of the production build lists no component named moment; the production build's module map holds no file of moment. The package's code is not present in the shipped artifact.",
       "timestamp": "2026-11-06T00:00:00.000Z"
     },
     {
@@ -42,7 +42,7 @@
       ],
       "status": "not_affected",
       "justification": "component_not_present",
-      "impact_statement": "npm/moment@2.29.1 appears in the lockfile SBOM but no component named npm/moment appears in the bundle SBOM generated from the production build. The package's code is not present in the shipped artifact.",
+      "impact_statement": "moment@2.29.1 is in the lockfile SBOM, but the bundle SBOM of the production build lists no component named moment; the production build's module map holds no file of moment. The package's code is not present in the shipped artifact.",
       "timestamp": "2026-11-06T00:00:00.000Z"
     },
     {
